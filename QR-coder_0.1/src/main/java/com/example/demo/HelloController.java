@@ -46,7 +46,7 @@ public class HelloController {
             qrCodeCounter++;
             if (!url.isEmpty()) {
 
-                int size = 300;
+                int size = 300; //to change size
 
                 String filePath = "qr_code/qr_code" + qrCodeCounter + ".png";
                 generateQRCode(url, size, filePath);

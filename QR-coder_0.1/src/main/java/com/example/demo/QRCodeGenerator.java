@@ -27,9 +27,9 @@ public class QRCodeGenerator {
 
             File qrFile = new File(filePath);
             MatrixToImageWriter.writeToFile(bitMatrix, FILE_FORMAT, qrFile);
-            System.out.println("QR код успешно сгенерирован в файл: " + qrFile.getAbsolutePath());
+            System.out.println("QR code successfully created: " + qrFile.getAbsolutePath());
         } catch (WriterException | IOException e) {
-            System.err.println("Ошибка при создании QR кода: " + e.getMessage());
+            System.err.println("Error when creating a QR code: " + e.getMessage());
         }
     }
 
